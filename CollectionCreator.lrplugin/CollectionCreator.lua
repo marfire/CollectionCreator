@@ -41,7 +41,7 @@ local PrefsKeys = {
 
 local DIALOG_REFRESH_RESULT = "refresh_dialog"
 local DEFAULT_NUM_PHOTOS = 10
-local DEFAULT_DESTINATION_NAME = os.date("%B %d, %Y")  -- The default name is today's date.
+local DEFAULT_DESTINATION_NAME = Utils.formatDate()  -- The default name is today's date.
 
 local UIConstants = {
     -- Layout
