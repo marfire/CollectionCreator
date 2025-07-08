@@ -36,6 +36,21 @@ function Utils.safeSort(t, comp)
     end
 end
 
+-- Formats a number with commas.
+function Utils.formatNumber(num)
+    local str = tostring(num)
+    local result = ""
+    
+    for i = #str, 1, -1 do
+        if #result > 0 and #result % 4 == 3 then
+            result = "," .. result
+        end
+        result = str:sub(i, i) .. result
+    end
+    
+    return result
+end
+
 -- Compares two objects by their title field.
 function Utils.titleCompare(a, b)
     return a.title < b.title

@@ -55,7 +55,7 @@ local UIConstants = {
 
     SOURCE_COLLECTION_FILL = 1.0,
     SOURCE_NUM_PHOTOS_WIDTH = 100,
-    SOURCE_TOTAL_PHOTOS_WIDTH = 65,
+    SOURCE_TOTAL_PHOTOS_WIDTH = 70,
     SOURCE_BUTTON_WIDTH = 35,
 
     DESTINATION_SET_FILL = 1.0,
@@ -303,7 +303,7 @@ local function updateTotalPhotos(sourceProps)
     assert(collection, "No Collection found for source.")
 
     local photos = collection:getPhotos()
-    sourceProps.totalPhotosText = string.format("of %d", #photos)
+    sourceProps.totalPhotosText = "of " .. Utils.formatNumber(#photos)
 end
 
 -- Asynchronously updates the total photo count for a source.
