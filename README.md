@@ -1,6 +1,6 @@
 # Collection Creator
 
-![Example Collection Creator dialog](docs/images/banner.png)
+![Example Collection Creator dialog](https://github.com/marfire/CollectionCreator/blob/v1.0.1/docs/images/banner.png)
 
 A Lightroom Classic plugin that creates new Collections by randomly sampling photos from the catalog.
 
