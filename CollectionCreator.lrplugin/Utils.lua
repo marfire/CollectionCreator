@@ -51,12 +51,6 @@ function Utils.formatNumber(num)
     return result
 end
 
--- Formats today's date as a string.
-function Utils.formatDate()
-    -- %e inserts an extra space instead of a 0, so we need to remove it.
-    return os.date("%B %e, %Y"):gsub("%s+", " ")
-end
-
 -- Compares two objects by their title field.
 function Utils.titleCompare(a, b)
     return a.title < b.title
