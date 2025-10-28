@@ -9,5 +9,5 @@ return {
 			file = "CollectionCreator.lua",
 		},
 	},
-	VERSION = {major=1, minor=0, revision=1},
+	VERSION = {major=1, minor=0, revision=2},
 }
